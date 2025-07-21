@@ -35,7 +35,8 @@ jobs:
         id: android_keystore
         with:
           fileName: upload-keystore.jks
-          encodedString: ${{ secrets.KEYSTORE_BASE64 }}
+          # encodedString: ${{ secrets.KEYSTORE_BASE64 }}
+          encodedString: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
 
       # Create key.properties
       - run: |
